@@ -324,7 +324,6 @@ body {
   cursor: pointer;
 }
 
-/* End Gallery */
 .popup-overlay {
   position: fixed;
   background-color: rgba(0, 0, 0, .7);
@@ -347,6 +346,32 @@ body {
   z-index: 1001;
 }
 
+.popup-box h3 {
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 20px;
+  color: var(--main-color);
+}
+
 .popup-box img {
   max-width: 100%;
 }
+
+.close-button {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: var(--main-color);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  color: #FFF;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Arial, Tahoma;
+  border-radius: 50%;
+}
+
+/* End Gallery */
