@@ -156,7 +156,7 @@ window.onscroll = function () {
 
     //window hight 
     let windowHeight = this.innerHeight;
-    console.log(windowHeight)
+    // console.log(windowHeight)
 
     //window scrolltop
     let windowScrollTop = this.pageYOffset;
@@ -248,6 +248,20 @@ document.addEventListener("click", (e) => {
         e.target.parentNode.remove();
 
         //remove overlay 
-        document.querySelector(".popup-overlay").remove(); 
+        document.querySelector(".popup-overlay").remove();
     }
+})
+
+//select all bullet 
+const allBullets = document.querySelectorAll(".nav-bullets .bullet");
+
+allBullets.forEach(bullet => {
+    bullet.addEventListener('click', (e) => {
+
+        document.querySelector(e.target.dataset.section).scrollIntoView({
+
+            behavior: 'smooth'
+        })
+
+    })
 })
